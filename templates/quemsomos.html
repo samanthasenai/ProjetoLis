@@ -1,0 +1,104 @@
+{% extends 'home.html' %}
+{% block conteudo %}
+
+<body>
+
+    <div class="container-fluid text-center m-3 ">
+        <h3>Nossa História</h3>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide mt-4">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/img/imagem1.jfif" class="d-block w-80 img_carousel mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Como tudo começou...</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/imagem2.jfif" class="d-block w-80 img_carousel mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Progredimos</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/imagem3.jfif" class="d-block w-60 img_carousel mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>E hoje somos uma das maiores
+                        <br> lojas de perfume do Brasil.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="px-1 mt-7 m-3">
+        <div class="ladodireito">
+
+            <p>Há décadas, em 1970, eu(Lis), lancei minha pequena loja de perfumes. Os primeiros anos foram
+                desafiadores, repletos de incertezas e obstáculos. A luta incessante para manter as portas abertas e os
+                frascos perfumados em exposição foi árdua, mas nunca deixei de acreditar no poder dos sonhos.<br>
+                Cada fragrância que escolhi meticulosamente para minha loja carregava uma história, um pedaço de mim que
+                eu compartilhava com cada cliente que atravessava minha porta. Através das décadas, naveguei pelas
+                mudanças e tendências do mundo dos perfumes, sempre perseverante, sempre apaixonada pelo poder da
+                memória olfativa.<br>
+                Hoje, em 2023, a Lis é uma marca reconhecida globalmente, uma joia da indústria de perfumes no Brasil e
+                além. Minha jornada foi de superação, de aprender com cada desafio, e de nunca desistir. Minha loja, um
+                oásis de aromas e lembranças, continua a encantar os sentidos e a criar experiências únicas para todos
+                que buscam um toque de elegância e sofisticação.É com gratidão que olho para trás, lembrando dos
+                momentos difíceis que me moldaram e me fortaleceram. A Liz não é apenas uma loja de perfumes, é um
+                testemunho de perseverança e paixão.<br>
+            <h3>Valores</h3>
+            <p>
+            <p>A visão da empresa Liz é ser reconhecida como uma referência de excelência em perfumaria,
+                estabelecendo-se como uma marca que transcende tendências e criações efêmeras.Os valores fundamentais da
+                empresa Liz são a busca contínua pela excelência em cada detalhe, o respeito à
+                natureza e o compromisso com práticas sustentáveis, a valorização da autenticidade e da individualidade
+                de cada cliente, e a responsabilidade social, contribuindo para comunidades e causas significativas.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+{% endblock %}
